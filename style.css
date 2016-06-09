@@ -1,0 +1,43 @@
+
+header {background-color: orange;}
+body {background: url(img/frnd_bg.jpg) no-repeat; }
+.main {margin-top: 30px;}
+ li {
+   display: inline;
+   margin-right: 15px;
+
+   padding-right: 10px;
+  }
+  li:last-child {
+    margin-left: 20px;
+
+  }
+
+  li a {text-decoration: none;}
+  li a:hover {text-decoration: underline;}
+
+  .grid_4 img {width:200px; height:200px;}
+
+section {
+  box-sizing: border-box;
+  padding: 10px;
+}
+.hero img{
+  width: 100%;
+  height: 200px;
+}
+.hero h4 {
+  text-align: center;
+  height: 200px;
+  background: url(/img/read1.jpg) no-repeat;
+  width: 100%;
+}
+
+footer {
+  text-align: center;
+  background-color: orange;
+  width: 70%;
+  height: 10%;
+
+
+}
