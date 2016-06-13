@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+	<!-- Website Title & Description for Search Engine purposes -->
+	<title></title>
+	<meta name="description" content="">
+
+	<!-- Mobile viewport optimized -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<!-- Bootstrap CSS -->
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+	<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+	<!-- Custom CSS -->
+	<link href="includes/css/styles.css" rel="stylesheet">
+
+	<!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="includes/js/modernizr-2.6.2.min.js"></script>
+
+</head>
+<body>
+
+	<div class="container" id="main">
+		<div class="navbar navbar-fixed-top" >
+			<div class="container" >
+				<button class="navbar-toggle" data-target=".navbar-responsive-collapse" data-toggle="collapse" type="button">
+					<span class="icon-bar"> </span>
+					<span class="icon-bar"> </span>
+					<span class="icon-bar"> </span>
+				</button>
+				<a class="navbar-brand" href="/."> <img src="images/logo.png" alt="your logo"></a>
+				<div class="nav-collapse collapse navbar-responsive-collapse" >
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#">Home </a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">Services <strong class="caret"> </strong></a>
+							<ul class="dropdown-menu">
+								<li> <a href="#" >Service 1 </a>
+								</li>
+								<li> <a href="#" >Service 2 </a>
+								</li>
+								<li> <a href="#" >Service 3 </a>
+								</li>
+								<li class="divider"> </li>
+								<li class="dropdown-header"> More Services
+								</li>
+								<li> <a href="#" >Service 4 </a>
+								</li>
+								<li> <a href="#" >Service 5 </a>
+								</li>
+							</ul> <!-- dropdown menu-->
+						</li>
+					</ul> <!-- nav ul -->
+					<form class="navbar-form pull-left">
+						<input type="text" class="form-control" placeholder="Search this site..." id="searchInput">
+						<button type="submit" class="btn btn-default"> <span class="glyphicon glyphicon-search"> </span> </button>
+					</form>
+					<ul class="nav navbar-nav pull-right">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <span class="glyphicon glyphicon-user"> </span> My Account <strong class="caret"> </strong> </a>
+							<ul class="dropdown-menu">
+								<li >
+									<a href="#" > <span class="glyphicon glyphicon-wrench">  </span> Settings </a>
+								</li>
+								<li >
+									<a href="#"> <span class="glyphicon glyphicon-refresh">  </span> Update Profile </a>
+								</li>
+								<li class="divider"> </li>
+								<li >
+									<a href="#"> <span class="glyphicon glyphicon-off">  </span> Sign out </a>
+								</li>
+							</ul> <!-- my account ul-->
+						</li>
+					</ul> <!-- nav pull-right -->
+				</div> <!-- nav-collapse-->
+
+			</div> <!-- nav container-->
+
+		</div> <!--navbar -->
+		<div class="carousel slide" id="myCarousel">
+			<!-- Carousel Indicators-->
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#myCarousel"> </li>
+				<li data-slide-to="1" data-target="#myCarousel"> </li>
+				<li data-slide-to="2" data-target="#myCarousel"> </li>
+			</ol> <!-- carousel-ind-->
+			<!-- Wrapper for slides -->
+			<div class="carousel-inner">
+				<div class="item active" id="slide1" >
+					<div class="carousel-caption " >
+						<h4> School </h4>
+						<p>The difference between school  and life? In school, you are taught a lesson and then given a test. In life, you are given a test that teaches you a lesson. – Tom Bodett </p>
+					</div> <!-- carousel-caption-->
+				</div> <!-- item-->
+				<div class="item" id="slide2" >
+					<div class="carousel-caption " >
+						<h4> College </h4>
+						<p>You might think that college is just high school continued, but its not. College opens doors for you that high school doesnot. And college can change you and shape you in ways that you might not imagine. </p>
+					</div> <!-- carousel-caption-->
+				</div> <!-- item-->
+				<div class="item" id="slide3" >
+					<div class="carousel-caption" >
+						<h4> Work </h4>
+						<p> A great place to work is one in which you trust the people you work for, have pride in what you do, and enjoy the people you work with -  Robert Levering, Co-Founder, Great Place to Work</p>
+					</div> <!-- carousel-caption-->
+				</div> <!-- item-->
+			</div> <!-- carousel-inner-->
+			<!--Controls-->
+
+			<a class="left carousel-control" data-slide="prev" href="#myCarousel">
+				<span class="icon-prev"></span>
+			</a>
+			<a class="right carousel-control" data-slide="next" href="#myCarousel">
+				<span class="icon-next"></span>
+			</a>
+
+
+		</div> <!--carousel -->
+
+		<div class="row" id="bigCallout">
+			<div class="col-12">
+				<div class="alert alert-success alert-block fade in" id="successAlert">
+					<button type="button" class="close" data-dismiss="alert">&times; </button>
+					<h4> Success </h4>
+					<p> will be using JQuery shortly</p>
+				</div> <!-- alert-->
+				<!--Visible only on small devices -->
+				<div class="well well-small visible-sm">
+					<a href="" class="btn btn-large btn-block btn-default"><span class="glyphicon glyphicon-call"> </span> Give us a call !</a>
+				</div> <!-- well-small-->
+				<div class="well">
+					<div class="page-header">
+						<h1>Tips for Reading <small> - Comfortable Reading </small> </h1>
+						<p class="lead"> Read in a sufficient visible light. While reading, it is good to have sufficient light. Or else it will be additional strain on the mind and eyes to read. </p>
+
+						<p> Have some breaks in between reading: Having breaks in between reading especially novels, story books etc is beneficial as it helps us focus on other important works of the day. </p>
+
+						<p>Do not read on iPad or tablet or e reader when you can find a hard copy of the book. This is to be considered for the benefit of eyes. Though one can weak anti glare glasses still it is not comfortable to read PDF books on them than reading hard copy ones. Reading a book is a healthy living aspect than reading on laptop or computer. </p>
+
+						<p>Use some remainders or page break ribbons to continue further reading. This helps you save time from re-searching the pages till where you read previously.</p>
+						<a href="" class="btn btn-larrge btn-primary" id="alertMe"> Nice big button</a>
+						<a href="" class="btn btn-larrge btn-link" > or secondary link</a>
+
+					</div> <!--page-header -->
+				</div> <!-- well-->
+			</div> <!-- col-12-->
+
+		</div> <!-- bigCallout -->
+		<div class="row" id="featuresHeading" >
+			<div class="col-12" >
+				<h2> Books add knowledge </h2>
+				<p class="lead"> Books are bought mainly for this purpose. They are the best mode of imparting education since school days for any one of us. Tough books are found on many topics, the number of books found on education related topics like science, maths,social etc. occupy major share.</p>
+			</div> <!-- col-12-->
+		</div> <!-- featuresHeading-->
+
+		<div class="row" id="features" >
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title"> Who moved my cheese  </h3>
+						<img src="images/cheese.jpg" alt="who moved my cheese" >
+						<p> An Amazing Way to Deal with Change in Your Work and in Your Life.The text describes change in one's work and life, and four typical reactions to those changes by two mice and two "little people," during their hunt for cheese.</p>
+						<a href="https://en.wikipedia.org/wiki/Who_Moved_My_Cheese%3F" target="_blank" class="btn btn-warning btn-block"> Learn how to cope with changes.</a>
+					</div> <!-- panel-heading-->
+				</div> <!-- panel -->
+			</div> <!-- feature-->
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title"> Ponniyin Selvan </h3>
+						<img src="images/ponni.jpg" alt="Tamil book Ponniyin Selvan" >
+						<p>Ponniyin Selvan (The Son of Ponni) is a 2400-page 20th-century Tamil historical novel written by Kalki Krishnamurthy. Written in five volumes, this narrates the story of Arulmozhivarman  one of the kings of the Chola Dynasty during the 10th and 11th centuries.  </p>
+						<a href="https://en.wikipedia.org/wiki/Ponniyin_Selvan" target="_blank" class="btn btn-danger btn-block"> Greatest novel never ever written.</a>
+					</div> <!-- panel-heading-->
+				</div> <!-- panel -->
+			</div> <!-- feature-->
+			<div class="col-sm-4 feature">
+				<div class="panel">
+					<div class="panel-heading">
+						<h3 class="panel-title">Fountain head</h3>
+						<img src="images/fountain.jpg" alt="The fountain head" >
+						<p>The Fountainhead is a 1943 novel by Ayn Rand, and her first major literary success.The Fountainhead's protagonist, Howard Roark, is an individualistic young architect who refuses to compromise his artistic and personal vision for worldly recognition and success. </p>
+						<a href="https://en.wikipedia.org/wiki/The_Fountainhead" target="_blank" class="btn btn-info btn-block"> Be yourself and never loose your hope.</a>
+					</div> <!-- panel-heading-->
+				</div> <!-- panel -->
+			</div> <!-- feature-->
+		</div> <!--features -->
+
+		<div class="row" id="moreInfo">
+
+			<div class="col-sm-6">
+				<h3> Libraries</h3>
+				<div class="tabbable" >
+					<ul class="nav nav-tabs">
+						<li class="active"> <a href="#tab1" data-toggle="tab"> Library 1 </a> </li>
+						<li> <a href="#tab2" data-toggle="tab"> Library 2 </a>  </li>
+					</ul>
+					<div class="tab-content">
+						<div class="tab-pane active" id="tab1">
+							<h4><span class="glyphicon glyphicon-map-marker"> </span> Location <small> Connemara Public Library</small></h4>
+							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.4512762896748!2d80.25445901435458!3d13.070561216236625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52660d7c87e66b%3A0x2b8104ff3474f054!2sConnemara+Public+Library!5e0!3m2!1sen!2sin!4v1465800132283" width="100%" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<p>Connemara Public Library at Egmore in Chennai, Tamil Nadu, India, is one of the four National Depository Libraries which receive a copy of all books, newspapers and periodicals published in India. Established in 1890, the library is a repository of centuries-old publications, wherein lie some of the most respected works and collections in the country. It also serves as a depository library for the UN. </p>
+						</div><!--tab-pane -->
+						<div class="tab-pane" id="tab2">
+							<h4> India's largest library </h4>
+							<img src="images/national_lib.jpg" alt="National Library" class="thumbnail pull-left">
+							<p>
+								The National Library of India on the Belvedere Estate in Alipore, Kolkata, is the largest library in India by volume and India's library of public record.It is under the Department of Culture, Ministry of Tourism &amp; Culture, Government of India. The library is designated to collect, disseminate and preserve printed material produced in India. The library is situated on the scenic 30-acre (12 ha) Belvedere Estate. It is the largest in India with a collection in excess of 2.2 million books.It is an institution of national importance under the Ministry of Culture, Government of India.
+							</p>
+							<hr>
+							<a href="#myModal" role="button" class="btn btn-warning" data-toggle="modal" > <span class="glyphicon glyphicon-hand-up"> </span> Know more </a>
+							<div class="modal fade" id="myModal">
+								<div class="modal-dialog" >
+									<div class="modal-content" >
+										<div class="modal-header" >
+											<button class="close" data-dismiss="modal" > &times; </button>
+											<h4 class="modal-title"> National Library </h4>
+										</div> <!--modal-header -->
+										<div class="modal-body" >
+											<h4> Location </h4>
+											<p> The library is situated at the Belvedere Estate, near Alipore Zoo in Kolkata (Calcutta). It is 4 km from Esplanade, 10 km from Howrah Station and 20 km from Netaji Subhas Chandra Bose International Airport.
+												The Esplanade Reading Room, which stacks newspapers is located at 6 Esplanade East, Kolkata 700 016, near Raj Bhavan.</p>
+
+												<a href="http://www.nationallibrary.gov.in/nat_lib_stat/locationmap.html" target="_blank"> The Location Maps and Pictures of the Buildings </a>
+												<h4> Postal Address  </h4>
+												<p> 									 The National Library, Belvedere KOLKATA India Pin: 700 027 								 	</p>
+												<h4> Email </h4>
+												<p>nldirector@rediffmail.com </p>
+												<h4>Library Timings</h4>
+												<p> The library is open from 9 a.m. to 8 p.m. on all the working days, and from 9.30 a.m. to 6 p.m. on Saturdays, Sundays and other holidays. On holidays only the Lending section, Reading Rooms of the Main Building, Annexe Building, New Annexe Building and Esplanade Reading Room remain open.</p>
+											</div> <!--modal-body -->
+											<div class="modal-footer">
+												<button class="btn btn-danger" data-dismiss="modal" type="button"> Close </button>
+											</div> <!-- modal-footer-->
+										</div> <!--modal-content -->
+									</div> <!--model-dialog -->
+								</div> <!--myModal -->
+							</div> <!-- tab pane-->
+						</div> <!--tab-content -->
+					</div> <!-- tabbable-->
+
+				</div> <!--col-sm-6 -->
+				<div class="col-sm-6">
+					<h3> The Best Books of All-Time</h3>
+					<p> This is my list of the best books of all-time. The central question that drives my own writing and work is, “How can we live better?” These books have been influential in helping me answer that question. These are my pillar books. They have shaped my thinking and I believe they are essential reading for living well in our modern world.</p>
+					<div class="list-group">
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading"> Book1</h4>
+							<p class="list-group-item-text"> Sapiens by Yuval Noah Harari</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading"> Book2</h4>
+							<p class="list-group-item-text"> Manual for Living by Epictetus</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading"> Book3</h4>
+							<p class="list-group-item-text"> Meditations by Marcus Aurelius</p>
+						</a>
+						<a href="#" class="list-group-item">
+							<h4 class="list-group-item-heading"> Book3</h4>
+							<p class="list-group-item-text"> A Brief History of Time by Stephen Hawking</p>
+						</a>
+					</div> <!--list-group -->
+					<p> Some more books
+						"Fooled by Randomness by Nassim Nicholas Taleb"
+						"The War of Art: Break Through Your Blocks and Win Your Inner Creative Battles by Steven Pressfield"
+						"Just Mercy by Bryan Stevenson"
+						"Surely You’re Joking, Mr. Feynman! by Richard P. Feynman"
+					</p>
+				</div> <!--col-sm-6 -->
+			</div> <!-- moreInfo-->
+		</div><!--container -->
+
+		<footer >
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-2">
+						<h6> Copyright &copy; 2016 {venkat} </h6>
+					</div> <!-- col-sm-2-->
+					<div class="col-sm-4">
+						<h6> About US </h6>
+						<p>
+							Assignment created as part of Bootstrap training. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+						</p>
+					</div> <!-- col-sm-4-->
+					<div class="col-sm-2">
+						<h6> Navigation </h6>
+						<ul class="unstyled">
+							<li><a href="#" > Home </a> </li>
+							<li><a href="#" > Services </a> </li>
+							<li><a href="#" > Links </a> </li>
+							<li><a href="#" > Contact </a> </li>
+						</ul>
+					</div> <!-- col-sm-2-->
+					<div class="col-sm-2">
+						<h6> Follow US </h6>
+						<ul class="unstyled">
+							<li><a href="#" > Twitter </a> </li>
+							<li><a href="#" > Facebook </a> </li>
+							<li><a href="#" > LinkedIn </a> </li>
+						</ul>
+					</div> <!-- col-sm-2-->
+					<div class="col-sm-2">
+						<h6> <span class="glyphicon glyphicon-thumbs-up"></span> Save Tree </h6>
+					</div> <!-- col-sm-2-->
+				</div> <!-- row-->
+			</div> <!--container -->
+		</footer>
+
+
+		<!-- All Javascript at the bottom of the page for faster page loading -->
+
+		<!-- First try for the online version of jQuery-->
+		<script src="http://code.jquery.com/jquery.js"></script>
+
+		<!-- If no online access, fallback to our hardcoded version of jQuery -->
+		<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+
+		<!-- Bootstrap JS -->
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+
+		<!-- Custom JS -->
+		<script src="includes/js/script.js"></script>
+
+	</body>
+	</html>
