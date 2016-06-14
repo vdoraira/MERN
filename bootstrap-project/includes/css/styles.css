@@ -19,6 +19,14 @@ Notes:	 Hand coded for Udemy.com
 .features img {
   margin: 0 0 20px;
 }
+.panel-heading img{
+  margin-right: 10px;
+}
+
+.list-group h4 {
+  font-family: 'Bad Script', cursive;
+}
+
 footer {
   background: #333;
   color: #eee;
@@ -33,7 +41,9 @@ footer {
 body {
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+
 }
+
 
 .well .page-header {
   margin-top: 0px;
