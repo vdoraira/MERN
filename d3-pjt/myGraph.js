@@ -57,17 +57,17 @@ function drawLineChart() {
                  .attr("d",urbFunc(urbData))
                  .attr("stroke","yellow")
                  .attr("stroke-width",2)
+                 .attr("data-legend", "Urban Population" )
                  .attr("fill","none");
     var rurFunc=d3.svg.line();
         rurFunc.x(function (d) {return 100 + (d.Year-1960)*(800/55);})
                .y(function (d) {return (400 - (d.Value*4) +10);});
     var rurGraph=svgCont.append("path")
-                .transition()
                 .attr("d",rurFunc(rurData))
                 .attr("stroke","orange")
                 .attr("stroke-width",2)
                 .attr("fill","none")
-                .duration(1000);
+                .attr("data-legend", "Rural Population" );
     svgCont.selectAll("circle").data(inpData).enter().append("circle")
                .transition()
                .attr("cx",function (d) {return 100 + (d.Year-1960)*(800/55);})
@@ -78,7 +78,11 @@ function drawLineChart() {
                .style("stroke-width",2)
                .duration(2000);
                //.on();
-
+   var legend=svgCont.append("g")
+                    .attr("class","legend")
+                    .attr("transform","translate(500,50)")
+                    .style("font-size","12px")
+                    .call(d3.legend);
     //svgCont.selectAll("circle").exit().remove();
   }
 
@@ -244,6 +248,7 @@ function drawStackChart() {
   var rect=valG.selectAll("rect")
           .data(function (d) { return d;})
           .enter().append("svg:rect")
+          .attr("data-legend", function (d) { return (d.y0==0?"Rural-Population":"Urban-Population");})
           .transition()
           .attr("x",function (d){return  (d.x*810/55);})
           .attr("y",function(d) {return  ((y(d.y + d.y0))/100000000);})
@@ -251,7 +256,11 @@ function drawStackChart() {
           .attr("width",(810/55/2))
           .duration(1000);
           //.attr("width",x.rangeBand());
-
+  var legend=svg.append("g")
+            .attr("class","legend")
+            .attr("transform","translate(500,50)")
+            .style("font-size","12px")
+            .call(d3.legend);
         //  rect.exit().remove();
   ;
 
