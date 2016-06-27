@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head> <title> Data Visualization with D3.js </title>
+    <style>
+    body { background-color: grey}
+    form {position: absolute; top: 10px;left: 800px;;}
+    </style>
+  </head>
+  <body >
+    <form >
+      <label><input type="radio" name="mode" value="lined" checked> Lined </label>
+      <label><input type="radio" name="mode" value="stacked"> Stacked </label>
+    </form>
+    <script src="http://d3js.org/d3.v2.js"></script>
+    <script src="myGraph.js"></script>
+
+    <script type="text/javascript">
+    var chartMode="lined";
+    drawLineChart();
+    d3.selectAll("input").on("change", changeChartMode);
+function changeChartMode() {
+    chartMode = this.value;
+    if (chartMode === "lined") {
+        d3.select("body svg").data([]).exit().remove();
+        drawLineChart();
+    }
+    else {
+        d3.select("body svg").data([]).exit().remove();
+        drawStackChart();
+    }
+}
+
+    </script>
+  </body>
+</html>
