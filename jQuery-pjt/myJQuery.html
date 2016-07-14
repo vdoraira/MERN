@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+  <head>
+    <title> JQuery Exercise </title>
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <script id=rowTemplate type=my/template>
+      <tr> <td>{{YEAR}} </td><td> {{RURAL}}</td><td> {{URBAN}}</td><td><button class="del"> Delete </button> </td> </tr>
+    </script>
+
+<style>
+table, th, td {
+    border: 1px solid black;
+}
+.legend rect {   stroke:black;  opacity:0.2;fill:none;}
+</style>
+  </head>
+  <body>
+    <div class="container">
+        <div class="table-area col-sm-6" data-file="Asia_Population.json">
+          <div class="existingTable">
+            <table > <tr><th>Year</th> <th>Rural Population</th><th>Urban Population</th></tr></table>
+          </div>
+
+        </div > <!-- section1 -->
+        <div class="graph-area col-sm-6">
+          <div class="graph-top">
+          </div>
+          <h1> Add data to JSON </h1>
+          <form class="newTable">
+            <pre>
+            Year <input id="yearIP" type="text" size="4" /> Rural Population <input id="ruralIP" type="text" size="6"/> Urban Population <input id="urbanIP" type="text" size="6"/><br>
+                                                                                                                                         <button class="add" > Add Row</button>
+          </pre>
+
+          </form>
+        </div > <!-- section2 -->
+    </div> <!-- container -->
+    <script src="http://d3js.org/d3.v2.js"></script>
+    <script src="d3-legend.js"></script>
+    <script src="jquery-3.0.0.min.js"></script>
+    <script src="myGraph.js"> </script>
+    <script src="myTable.js"> </script>
+    <script src="myJQuery.js"> </script>
+  </body>
+</html>
