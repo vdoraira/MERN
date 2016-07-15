@@ -1,0 +1,20 @@
+{
+  "name": "myReact",
+  "homepage": "https://github.com/stackroute/StackRoute-Vagrant-Node5-Mongo3.2",
+  "description": "Trying out React.js",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "react": "^15.2.0",
+    "bootstrap": "^3.3.6",
+    "babel": "*"
+  }
+}

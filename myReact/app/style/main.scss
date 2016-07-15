@@ -1,0 +1,59 @@
+@import '../../node_modules/bourbon/app/assets/stylesheets/_bourbon';
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+#main-container {
+  max-width: 1366px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.search-input {
+  margin-bottom: 20px;
+
+  input {
+    padding: 5px;
+    margin-right: 5px;
+    + button {
+      padding: 7px;
+      font-size: 0.7em;
+    }
+  }
+}
+
+.search-output {
+  .result {
+
+    &:after {
+      content: ".";
+      height: 0;
+      clear: both;
+      display: block;
+    }
+
+    img {
+      max-width: 100%;
+      float: left;
+      margin-right: 10px;
+    }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .search-output {
+    .result {
+      img {
+        max-width: 100%;
+        float: none;
+        margin: 0 auto;
+        display: block;
+      }
+    }
+  }
+}
